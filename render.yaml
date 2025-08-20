@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: whatsapp-spouse-bot
+    env: java
+    buildCommand: mvn clean install
+    startCommand: java -jar target/whatsapp-spouse-bot-1.0.0.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 11
